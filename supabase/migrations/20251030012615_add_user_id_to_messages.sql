@@ -1,0 +1,1 @@
+ALTER TABLE messages ADD COLUMN user_id UUID NOT NULL;
