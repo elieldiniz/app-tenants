@@ -37,7 +37,7 @@ serve(async (req: Request) => {
         {
           status: 400,
           headers: { ...corsHeaders, "Content-Type": "application/json" },
-        }
+        },
       );
     }
 
@@ -50,7 +50,7 @@ serve(async (req: Request) => {
     console.log("🔧 ENV supabase_url:", supabaseUrl);
     console.log(
       "🔧 ENV server_role (service role):",
-      serviceRole ? "OK" : "NÃO DEFINIDO"
+      serviceRole ? "OK" : "NÃO DEFINIDO",
     );
 
     if (!supabaseUrl || !serviceRole) {
@@ -61,7 +61,7 @@ serve(async (req: Request) => {
         {
           status: 500,
           headers: { ...corsHeaders, "Content-Type": "application/json" },
-        }
+        },
       );
     }
 
@@ -102,7 +102,7 @@ serve(async (req: Request) => {
         {
           status: 500,
           headers: { ...corsHeaders, "Content-Type": "application/json" },
-        }
+        },
       );
     }
 
